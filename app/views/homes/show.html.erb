@@ -1,0 +1,5 @@
+<p class="single-text">
+        <%= @books.body %>    
+      </p>
+      <%= link_to "Destroy", edit_books_path(@books) %>
+      <%= link_to "Destroy", books_path(@books), method: :delete %>

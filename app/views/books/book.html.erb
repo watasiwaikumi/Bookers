@@ -1,0 +1,6 @@
+<%= form_for(@books, url: names_path) do |f| %>
+<% if @books.errors.any? %>
+<%= @books.errors.count %>errors prohibited this book from being saved:
+<% @books.errors.full_messages.each do |message| %>
+<%= message %>
+<% end %>
