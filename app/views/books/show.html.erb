@@ -1,13 +1,18 @@
-<h1></h1>
-<p id="notice"></p>
+<% if flash[:notice] %>
+     <p id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
 <p>
-  <strong>Title:<%= @book.title %></strong>
+  <strong>Title:</strong>
+  <%= @book.title %>
 
 </p>
 <p>
-  <strong>Body:<%= @book.body %></strong>
+  <strong>Body:</strong>
+  <%= @book.body %>
 
 </p>
 <%= link_to 'Edit', edit_book_path(@book.id)%>
 |
-<a class="back" href="/books">Back</a>
+<%= link_to "Back" ,books_path%>

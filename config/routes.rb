@@ -4,9 +4,6 @@ Rails.application.routes.draw do
   get 'top' => 'books#top'
   root to: 'homes#top'
   
-  get 'show' => 'show#book'
-  root to: 'books#show'
-  
   
   
 end
